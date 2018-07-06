@@ -29,8 +29,10 @@
             this.tmrFollowers = new System.Windows.Forms.Timer(this.components);
             this.picShop = new System.Windows.Forms.PictureBox();
             this.lblShop = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnVpF = new System.Windows.Forms.Button();
+            this.lblVpF = new System.Windows.Forms.Label();
+            this.lblVpC = new System.Windows.Forms.Label();
+            this.btnVpC = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picClick)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picShop)).BeginInit();
             this.SuspendLayout();
@@ -81,31 +83,52 @@
             this.lblShop.TabIndex = 3;
             this.lblShop.Text = "Shop";
             // 
-            // button1
+            // btnVpF
             // 
-            this.button1.Location = new System.Drawing.Point(299, 68);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(295, 33);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Upgrade Votes per Follower";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnVpF.Location = new System.Drawing.Point(299, 68);
+            this.btnVpF.Name = "btnVpF";
+            this.btnVpF.Size = new System.Drawing.Size(295, 33);
+            this.btnVpF.TabIndex = 4;
+            this.btnVpF.Text = "Upgrade Votes per Follower (20kF)";
+            this.btnVpF.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lblVpF
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(482, 104);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 15);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "1 Vote per Follower";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblVpF.AutoSize = true;
+            this.lblVpF.Location = new System.Drawing.Point(482, 104);
+            this.lblVpF.Name = "lblVpF";
+            this.lblVpF.Size = new System.Drawing.Size(112, 15);
+            this.lblVpF.TabIndex = 5;
+            this.lblVpF.Text = "1 Vote per Follower";
+            this.lblVpF.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblVpC
+            // 
+            this.lblVpC.AutoSize = true;
+            this.lblVpC.Location = new System.Drawing.Point(503, 173);
+            this.lblVpC.Name = "lblVpC";
+            this.lblVpC.Size = new System.Drawing.Size(91, 15);
+            this.lblVpC.TabIndex = 7;
+            this.lblVpC.Text = "1 Vote per Click";
+            this.lblVpC.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // btnVpC
+            // 
+            this.btnVpC.Location = new System.Drawing.Point(299, 137);
+            this.btnVpC.Name = "btnVpC";
+            this.btnVpC.Size = new System.Drawing.Size(295, 33);
+            this.btnVpC.TabIndex = 6;
+            this.btnVpC.Text = "Upgrade Votes per Click (40kF)";
+            this.btnVpC.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(608, 390);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblVpC);
+            this.Controls.Add(this.btnVpC);
+            this.Controls.Add(this.lblVpF);
+            this.Controls.Add(this.btnVpF);
             this.Controls.Add(this.lblShop);
             this.Controls.Add(this.picShop);
             this.Controls.Add(this.lblInfo);
@@ -128,8 +151,10 @@
         private System.Windows.Forms.Timer tmrFollowers;
         private System.Windows.Forms.PictureBox picShop;
         private System.Windows.Forms.Label lblShop;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnVpF;
+        private System.Windows.Forms.Label lblVpF;
+        private System.Windows.Forms.Label lblVpC;
+        private System.Windows.Forms.Button btnVpC;
     }
 }
 

@@ -72,6 +72,7 @@
             this.picShop.Size = new System.Drawing.Size(100, 41);
             this.picShop.TabIndex = 2;
             this.picShop.TabStop = false;
+            this.picShop.Click += new System.EventHandler(this.picShop_Click);
             // 
             // lblShop
             // 
@@ -124,7 +125,7 @@
             // frmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(608, 390);
+            this.ClientSize = new System.Drawing.Size(292, 390);
             this.Controls.Add(this.lblVpC);
             this.Controls.Add(this.btnVpC);
             this.Controls.Add(this.lblVpF);
@@ -135,6 +136,8 @@
             this.Controls.Add(this.picClick);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "frmMain";
             this.Text = "Cory Clicker";
             ((System.ComponentModel.ISupportInitialize)(this.picClick)).EndInit();

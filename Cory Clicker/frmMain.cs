@@ -15,7 +15,7 @@ namespace Cory_Clicker {
         private int PresidentDefeats = 0;
 
         private int VotesPerFollower = 1;
-        private int VotesPerClick = 1;
+        private int VotesPerClick = 1;//308-625
 
         // Votes until a follower is added.
         private int MaxVotes = 50;
@@ -72,6 +72,10 @@ namespace Cory_Clicker {
 
             addFollower();
             updateUI();
+        }
+
+        private void picShop_Click(object sender, EventArgs e) {
+            this.Width = Width == 308 ? 625 : 308; 
         }
     }
 }

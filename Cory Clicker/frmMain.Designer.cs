@@ -24,31 +24,20 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            this.picClick = new System.Windows.Forms.PictureBox();
             this.lblInfo = new System.Windows.Forms.Label();
             this.tmrFollowers = new System.Windows.Forms.Timer(this.components);
-            this.picShop = new System.Windows.Forms.PictureBox();
             this.lblShop = new System.Windows.Forms.Label();
             this.btnVpF = new System.Windows.Forms.Button();
             this.lblVpF = new System.Windows.Forms.Label();
             this.lblVpC = new System.Windows.Forms.Label();
             this.btnVpC = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.picClick)).BeginInit();
+            this.picCory = new System.Windows.Forms.PictureBox();
+            this.picShop = new System.Windows.Forms.PictureBox();
+            this.picClick = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picCory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picShop)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picClick)).BeginInit();
             this.SuspendLayout();
-            // 
-            // picClick
-            // 
-            this.picClick.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picClick.Image = global::Cory_Clicker.Properties.Resources.Whitehouse;
-            this.picClick.Location = new System.Drawing.Point(46, 98);
-            this.picClick.Name = "picClick";
-            this.picClick.Size = new System.Drawing.Size(200, 96);
-            this.picClick.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picClick.TabIndex = 0;
-            this.picClick.TabStop = false;
-            this.picClick.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picClick_MouseDown);
-            this.picClick.MouseUp += new System.Windows.Forms.MouseEventHandler(this.picClick_MouseUp);
             // 
             // lblInfo
             // 
@@ -64,16 +53,6 @@
             this.tmrFollowers.Enabled = true;
             this.tmrFollowers.Interval = 4000;
             this.tmrFollowers.Tick += new System.EventHandler(this.tmrFollowers_Tick);
-            // 
-            // picShop
-            // 
-            this.picShop.Location = new System.Drawing.Point(180, 337);
-            this.picShop.Name = "picShop";
-            this.picShop.Size = new System.Drawing.Size(100, 41);
-            this.picShop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picShop.TabIndex = 2;
-            this.picShop.TabStop = false;
-            this.picShop.Click += new System.EventHandler(this.picShop_Click);
             // 
             // lblShop
             // 
@@ -93,6 +72,7 @@
             this.btnVpF.TabIndex = 4;
             this.btnVpF.Text = "Upgrade Votes per Follower (20kF)";
             this.btnVpF.UseVisualStyleBackColor = true;
+            this.btnVpF.Click += new System.EventHandler(this.btnVpF_Click);
             // 
             // lblVpF
             // 
@@ -122,11 +102,45 @@
             this.btnVpC.TabIndex = 6;
             this.btnVpC.Text = "Upgrade Votes per Click (40kF)";
             this.btnVpC.UseVisualStyleBackColor = true;
+            this.btnVpC.Click += new System.EventHandler(this.btnVpC_Click);
+            // 
+            // picCory
+            // 
+            this.picCory.Image = global::Cory_Clicker.Properties.Resources._153085555815845295;
+            this.picCory.Location = new System.Drawing.Point(12, 289);
+            this.picCory.Name = "picCory";
+            this.picCory.Size = new System.Drawing.Size(64, 89);
+            this.picCory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCory.TabIndex = 8;
+            this.picCory.TabStop = false;
+            // 
+            // picShop
+            // 
+            this.picShop.Location = new System.Drawing.Point(180, 337);
+            this.picShop.Name = "picShop";
+            this.picShop.Size = new System.Drawing.Size(100, 41);
+            this.picShop.TabIndex = 2;
+            this.picShop.TabStop = false;
+            this.picShop.Click += new System.EventHandler(this.picShop_Click);
+            // 
+            // picClick
+            // 
+            this.picClick.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picClick.Image = global::Cory_Clicker.Properties.Resources.Whitehouse;
+            this.picClick.Location = new System.Drawing.Point(46, 98);
+            this.picClick.Name = "picClick";
+            this.picClick.Size = new System.Drawing.Size(200, 96);
+            this.picClick.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picClick.TabIndex = 0;
+            this.picClick.TabStop = false;
+            this.picClick.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picClick_MouseDown);
+            this.picClick.MouseUp += new System.Windows.Forms.MouseEventHandler(this.picClick_MouseUp);
             // 
             // frmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(292, 390);
+            this.ClientSize = new System.Drawing.Size(609, 390);
+            this.Controls.Add(this.picCory);
             this.Controls.Add(this.lblVpC);
             this.Controls.Add(this.btnVpC);
             this.Controls.Add(this.lblVpF);
@@ -141,8 +155,9 @@
             this.MaximizeBox = false;
             this.Name = "frmMain";
             this.Text = "Cory Clicker";
-            ((System.ComponentModel.ISupportInitialize)(this.picClick)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picShop)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picClick)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,6 +174,7 @@
         private System.Windows.Forms.Label lblVpF;
         private System.Windows.Forms.Label lblVpC;
         private System.Windows.Forms.Button btnVpC;
+        private System.Windows.Forms.PictureBox picCory;
     }
 }
 

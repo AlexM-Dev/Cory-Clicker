@@ -70,6 +70,7 @@
             this.picShop.Location = new System.Drawing.Point(180, 337);
             this.picShop.Name = "picShop";
             this.picShop.Size = new System.Drawing.Size(100, 41);
+            this.picShop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picShop.TabIndex = 2;
             this.picShop.TabStop = false;
             this.picShop.Click += new System.EventHandler(this.picShop_Click);
